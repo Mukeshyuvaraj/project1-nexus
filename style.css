@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background-color: #081b29;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #081b29;
+    border: 1px solid #1ef;
+    border-radius: 5px;
+    box-shadow: 6px 6px 10px #1ef;
+    overflow: hidden;
+    max-width: 100%;
+    width: 400px;
+}
+.head{
+    border-bottom: 1.5px solid #1ef;
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: center;
+}
+.form{
+    padding: 10px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-size: 14px;
+    padding: 5px 12px;
+    width: 100%;
+}
+.form-control input:focus{
+    outline: none;
+    border-color: #1ef;
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.form-control.success i.fa-circle-check{
+    color: green;
+    visibility: visible;
+}
+.form-control.error i.fa-circle-exclamation{
+    color: red;
+    visibility: visible;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form button{
+    background-color: #1ef;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 7px;
+    border-radius: 5px;
+    display: block;
+}
+.form p{
+    padding: 10px;
+    color: whitesmoke;
+    
+}
+.form p a{
+    text-decoration: none;
+    color: blue;
+    font-size: 15px;
+}
+
+
+
+@media  (max-width: 430px) {
+    .container{
+        width: 330px;
+    }
+}
+@media  (max-width: 330px) {
+    .container{
+        width: 270px;
+    }
+}
