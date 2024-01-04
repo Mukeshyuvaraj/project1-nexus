@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
     <link rel="stylesheet" href="style.css">
-    <link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/d651a0d55a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,7 +14,6 @@
         </div>
         <form class="form" id="form">
             <div class="form-control">
-                <!--<i class="fa-solid fa-user"></i>-->
                 <label>User Name:</label>
                 <input type="text" placeholder="Enter your name"  id="username">
                 <i class="fa-solid fa-circle-check"></i>
@@ -24,7 +22,6 @@
             </div>
            
             <div class="form-control">
-                <!--<i class="fa-solid fa-envelope"></i>-->
                 <label>Email Id:</label>
                 <input type="email" placeholder="Enter your Email Id"  id="email">
                 <i class="fa-solid fa-circle-check"></i>
@@ -32,7 +29,6 @@
                 <small>Error Message</small>
             </div>
             <div class="form-control">
-                <!--<i class="fa-solid fa-lock"></i>-->
                 <label>Password:</label>
                 <input type="password" placeholder="Enter your Password"  id="password">
                 <i class="fa-solid fa-circle-check"></i>
@@ -40,7 +36,6 @@
                 <small>Error Message</small>
             </div>
             <div class="form-control">
-                <!----<i class="fa-solid fa-lock"></i>-->
                 <label>Confirm Password:</label>
                 <input type="password" placeholder="Confirm Password"  id="password2">
                 <i class="fa-solid fa-circle-check"></i>
@@ -54,12 +49,10 @@
 
     <script>
         function redirectToAnotherPage() {
-        // Set the URL of the desired page
-        let loginPage = 'login.html';
+            let loginPage = 'login.html';
 
-        // Redirect to the new page
-        window.location.href = loginPage;
-    }
+            window.location.href = loginPage;
+        }
 
 
 
