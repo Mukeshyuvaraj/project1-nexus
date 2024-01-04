@@ -33,9 +33,6 @@
    - Event listeners for form submissions
    - Dynamic error message display based on validation results
 
-8. **Testing**
-   - Manual testing of form inputs
-   - Checking responsiveness on different devices
-   - Verification of error messages and form submission
+
 
 
