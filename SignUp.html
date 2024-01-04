@@ -48,11 +48,23 @@
                 <small>Error Message</small>
             </div>
             <button>SignUp</button>
-            <p>Already have an Account? <a href="login.html">Login Here</a></p>
+            <p>Already have an Account? <span onclick="redirectToAnotherPage()">Login Here</span></p>
         </form>
     </div>
 
     <script>
+        function redirectToAnotherPage() {
+        // Set the URL of the desired page
+        let loginPage = 'login.html';
+
+        // Redirect to the new page
+        window.location.href = loginPage;
+    }
+
+
+
+
+
         const form = document.getElementById("form");
         const username = document.getElementById("username");
         const email = document.getElementById("email");
@@ -126,6 +138,9 @@
         function isEmail(email){
             return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
         }
+
+
+
     </script>
 </body>
 </html>

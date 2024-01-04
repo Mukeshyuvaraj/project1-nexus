@@ -94,16 +94,18 @@ body{
     padding: 7px;
     border-radius: 5px;
     display: block;
+    cursor: pointer;
 }
 .form p{
     padding: 10px;
     color: whitesmoke;
     
 }
-.form p a{
+.form p span{
     text-decoration: none;
     color: blue;
     font-size: 15px;
+    cursor: pointer;
 }
 
 
@@ -117,4 +119,15 @@ body{
     .container{
         width: 270px;
     }
+}
+
+
+#passwordStrength {
+    margin-top: -10px;
+    font-size: 14px;
+    color: #FF0000;
+}
+
+#passwordStrength span {
+    font-weight: bold;
 }

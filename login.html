@@ -31,11 +31,21 @@
                 <small>Error Message</small>
             </div>
             <button>Login</button>
-            <p>Don't have an Account? <a href="SignUp.html">Signup Here</a></p>
+            <p>Don't have an Account? <span onclick="redirectToAnotherPage()">SignUp Here</span></p>
         </form>
     </div>
 
     <script>
+        function redirectToAnotherPage() {
+        // Set the URL of the desired page
+        let signupPage = 'SignUp.html';
+
+        // Redirect to the new page
+        window.location.href = signupPage;
+    }
+
+
+
         const form = document.getElementById("form");
         const email = document.getElementById("email");
         const password = document.getElementById("password");
