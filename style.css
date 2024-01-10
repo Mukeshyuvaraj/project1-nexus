@@ -121,13 +121,3 @@ body{
     }
 }
 
-
-#passwordStrength {
-    margin-top: -10px;
-    font-size: 14px;
-    color: #FF0000;
-}
-
-#passwordStrength span {
-    font-weight: bold;
-}
